@@ -7,13 +7,13 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div className=" my-3  md:p-2   sm:ml-3 rounded-full bg-blue-600/10 sm:w-16   h-[8vh] sm:h-[96vh] flex sm:flex-col flex-row justify-between ">
+    <div className=" my-3  md:p-2    sm:ml-3 rounded-full bg-blue-600/10 sm:w-16    h-[7vh] sm:h-[96vh] flex sm:flex-col flex-row justify-between ">
       <p className="text-sky-500 text-2xl  w-12 p-2 text-center font-bold sm:bg-slate-900 rounded-full">
         F
       </p>
-      <ul className="flex sm:flex-col sm:justify-between   sm:h-[40vh] mb-9">
+      <ul className="flex sm:flex-col sm:justify-between  sm:h-[40vh] ">
         <li>
-          <Link to={`home`}>
+          <Link to={`/`}>
             <BsFillHouseDoorFill
               className="text-slate-600 text-4xl  w-12 h-12 p-2 hover:bg-slate-900 hover:text-sky-500  hover:rounded-full cursor-pointer"
               title="Home"
@@ -21,7 +21,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to={`habilidades`}>
+          <Link to={`skill`}>
             <GiSkills
               className="text-slate-600   w-12  h-12 p-2  hover:text-sky-500 cursor-pointer  hover:rounded-full hover:bg-slate-900"
               title="Habilidades"
@@ -29,15 +29,15 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className="">
-          <Link to={`proyectos`}>
+          <Link to={`projects`}>
             <AiFillExperiment
               className="text-slate-600 text-4xl  w-12 h-12 p-2 font-bolt  hover:rounded-full hover:bg-slate-900 hover:text-sky-500 cursor-pointer  "
-              title="Experiencia"
+              title="Proyectos"
             />
           </Link>
         </li>
         <li>
-          <Link to={`contacto`}>
+          <Link to={`contact`}>
             <AiFillMessage
               className="text-slate-600 text-2xl w-12 h-12 p-2  hover:text-sky-500 cursor-pointer  hover:rounded-full hover:bg-slate-900"
               title="Contacto"

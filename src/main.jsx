@@ -2,12 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
-import Contacto from './components/Contacto'
+import Contact from './components/Contact'
 
-import Habilidades from './components/Habilidades'
+import Skill from './components/Skill'
 
 import Home from './components/Home'
-import Proyectos from './components/Proyectos'
+import Projects from './components/Projects'
 import './index.css'
 import Blog from './pages/Blog/Blog'
 import { ErrorPage } from './pages/ErrorPage'
@@ -25,16 +25,16 @@ const router = createBrowserRouter([
         element: <Home />
       },   
       {
-        path:"habilidades",
-        element: <Habilidades />
+        path:"skill",
+        element: <Skill />
       },  
       {
-        path:"proyectos",
-        element: <Proyectos />
+        path:"projects",
+        element: <Projects />
       }, 
       {
-        path:"contacto",
-        element: <Contacto />
+        path:"contact",
+        element: <Contact />
       }, 
       {
         path:"blog",

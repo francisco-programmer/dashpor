@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-  const notify = () => toast.success('🦄 Wow so easy!', {
+  const notify = () => toast.success('Mensaje Enviado! 😁', {
     position: "bottom-left",
     autoClose: 5000,
     hideProgressBar: false,
@@ -40,7 +40,7 @@ const Contact = () => {
           <input
             type="text"
             className="w-72 mx-auto p-2 pl-8 rounded my-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
-      disabled:bg-slate-50 disabled:text-slate-500 bg-slate-300 disabled:border-slate-200 disabled:shadow-none
+      disabled:bg-slate-50 disabled:text-slate-500 bg-sky-600/10 text-white  disabled:border-sky-200 disabled:shadow-none
       invalid:border-sky-500 g-pink-600"
             maxLength={30}
             required
@@ -54,7 +54,7 @@ const Contact = () => {
           <input
             type="email"
             className="w-72 mx-auto p-2 pl-8 rounded my-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
-      disabled:bg-slate-50 disabled:text-slate-500 bg-slate-300 disabled:border-slate-200 disabled:shadow-none
+      disabled:bg-slate-50 disabled:text-slate-500 bg-sky-600/10 text-white disabled:border-slate-200 disabled:shadow-none
       invalid:border-sky-500 g-pink-600"
             maxLength={30}
             required
@@ -62,11 +62,11 @@ const Contact = () => {
           />
         </div>
         <div className="relative ">
-          <BiMessageDots className="absolute top-1/2 -translate-y-1/2 left-2 text-slate-500 " />
+          <BiMessageDots className="absolute top-1/3 -translate-y-1/2 left-2 text-slate-500 " />
 
           <textarea
             type="text"
-            className="w-72 mx-auto p-2 pl-8 rounded bg-slate-300 my-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+            className="w-72 mx-auto p-2 pl-8 rounded bg-sky-600/10 text-white my-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
       invalid:border-sky-500 g-pink-600"
             

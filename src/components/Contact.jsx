@@ -45,10 +45,10 @@ const Contact = () => {
       <p className="text-slate-300 font-poppins">
         Podemos construir cosas increibles y estas aun paso de hacerlo!!.
       </p>
-      <h1 className="font-poppins text-center  text-2xl text-sky-500 ">
+      <h1 className="font-poppins text-center  text-2xl text-sky-500  mt-6">
         Contáctame
       </h1>
-      <div className="flex gap-4 justify-center m-3">
+      <div className="flex gap-4 justify-center my-6">
         <AiFillLinkedin className="text-slate-300 text-4xl rounded hover:text-sky-500 cursor-pointer" 
         onClick={() => {window.open("https://www.linkedin.com/in/francisco-palencia/", "_blank")}}/>{" "}
         <FaGithubSquare className="text-slate-300 text-4xl rounded hover:text-sky-500 cursor-pointer" />

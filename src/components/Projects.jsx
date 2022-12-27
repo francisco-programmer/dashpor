@@ -8,8 +8,8 @@ import quiz from '../assets/quiz.png'
  const Projects = () => {
   return (
     <div className="">
-      <h1 className="font-poppins f text-2xl text-sky-500 ">Proyectos</h1>
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
+      <h1 className="font-poppins f text-2xl text-sky-500  ">Proyectos</h1>
+      <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5">
         <div
           className="bg-contain h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
           style={{ backgroundImage: `url(${axiosagency})` }}

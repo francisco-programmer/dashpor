@@ -69,7 +69,7 @@ const Presentacion = () => {
           <div></div>
         </div>
 
-       <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center">
+        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center">
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <HiLightBulb className="text-white text-5xl" />

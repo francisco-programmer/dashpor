@@ -49,71 +49,91 @@ const Contact = () => {
         Contáctame
       </h1>
       <div className="flex gap-4 justify-center my-6">
-        <AiFillLinkedin className="text-slate-300 text-4xl rounded hover:text-sky-500 cursor-pointer" 
-        onClick={() => {window.open("https://www.linkedin.com/in/francisco-palencia/", "_blank")}}/>{" "}
-        <FaGithubSquare className="text-slate-300 text-4xl rounded hover:text-sky-500 cursor-pointer" />
+        <AiFillLinkedin
+          className="text-slate-300 text-4xl rounded hover:text-sky-500 cursor-pointer"
+          onClick={() => {
+            window.open(
+              "https://www.linkedin.com/in/francisco-palencia/",
+              "_blank"
+            );
+          }}
+        />{" "}
+        <FaGithubSquare
+          onClick={() => {
+            window.open(
+              "https://www.github.com/francisco-programmer/",
+              "_blank"
+            );
+          }}
+          className="text-slate-300 text-4xl rounded hover:text-sky-500 cursor-pointer"
+        />
       </div>
 
       {/* Formulario */}
-      <form ref={form} onSubmit={sendEmail}> 
-      <div className='mx-auto  flex flex-col   gap-4 place-items-center'>
-      <div className="relative ">
-          <AiOutlineUser className="absolute top-1/2 -translate-y-1/2 left-2 text-slate-500 " />
+      <form ref={form} onSubmit={sendEmail}>
+        <div className="mx-auto  flex flex-col   gap-4 place-items-center">
+          <div className="relative ">
+            <AiOutlineUser className="absolute top-1/2 -translate-y-1/2 left-2 text-slate-500 " />
 
-          <input
-            type="text" name='user_name' 
-            className="w-72 mx-auto p-2 pl-8 rounded my-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+            <input
+              type="text"
+              name="user_name"
+              className="w-72 mx-auto p-2 pl-8 rounded my-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 bg-sky-600/10 text-white  disabled:border-sky-200 disabled:shadow-none
       invalid:border-sky-500 g-pink-600"
-            maxLength={30}
-            required
-            placeholder="Nombre"
-          />
-        </div>
+              maxLength={30}
+              required
+              placeholder="Nombre"
+            />
+          </div>
 
-        <div className="relative ">
-          <MdEmail className="absolute top-1/2 -translate-y-1/2 left-2 text-slate-500 " />
+          <div className="relative ">
+            <MdEmail className="absolute top-1/2 -translate-y-1/2 left-2 text-slate-500 " />
 
-          <input
-            type="email" name="user_email"
-            className="w-72 mx-auto p-2 pl-8 rounded my-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+            <input
+              type="email"
+              name="user_email"
+              className="w-72 mx-auto p-2 pl-8 rounded my-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 bg-sky-600/10 text-white disabled:border-slate-200 disabled:shadow-none
       invalid:border-sky-500 g-pink-600"
-            maxLength={30}
-            required
-            placeholder="Email"
-          />
-        </div>
-        <div className="relative ">
-          <BiMessageDots className="absolute top-1/3 -translate-y-1/2 left-2 text-slate-500 " />
+              maxLength={30}
+              required
+              placeholder="Email"
+            />
+          </div>
+          <div className="relative ">
+            <BiMessageDots className="absolute top-1/3 -translate-y-1/2 left-2 text-slate-500 " />
 
-          <textarea
-            type="text" name="message"
-            className="w-72 mx-auto p-2 pl-8 rounded bg-sky-600/10 text-white my-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+            <textarea
+              type="text"
+              name="message"
+              className="w-72 mx-auto p-2 pl-8 rounded bg-sky-600/10 text-white my-1 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
-      invalid:border-sky-500 g-pink-600"            
-            required
-            placeholder="Mensaje"
+      invalid:border-sky-500 g-pink-600"
+              required
+              placeholder="Mensaje"
+            />
+          </div>
+          <input
+            type="submit"
+            value="Enviar"
+            className="text-slate-300 bg-green-500 p-3 w-72 font-poppins font-semibold rounded cursor-pointer  text-center"
           />
-          
         </div>
-        <input type="submit" value="Enviar"
-        className="text-slate-300 bg-green-500 p-3 w-72 font-poppins font-semibold rounded cursor-pointer  text-center" />
-      </div>
       </form>
-      
-      <ToastContainer 
-       position="bottom-left"
-       autoClose={5000}
-       hideProgressBar={false}
-       newestOnTop={false}
-       closeOnClick
-       rtl={false}
-       pauseOnFocusLoss
-       draggable
-       pauseOnHover
-       theme="dark"
-       />
+
+      <ToastContainer
+        position="bottom-left"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   );
 }

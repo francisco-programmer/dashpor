@@ -10,7 +10,7 @@ const SkillDif = () => {
       <div>
         <p className='text-sky-500 font-poppins text-2xl'>Habilidades Tecnicas</p><br></br>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 ">
         {/* frontend skill */}
 
         <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center">

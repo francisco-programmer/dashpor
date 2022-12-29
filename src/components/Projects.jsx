@@ -3,6 +3,7 @@ import axiosagency from '../assets/axiosagency.png'
 import dashboard from '../assets/dashboard.png'
 import transporto from '../assets/transporto.png'
 import quiz from '../assets/quiz.png'
+import portafolio  from '../assets/portafolio.png'
 
 
  const Projects = () => {
@@ -10,6 +11,15 @@ import quiz from '../assets/quiz.png'
     <div className="">
       <h1 className="font-poppins f text-2xl text-sky-500  ">Proyectos</h1>
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5">
+        {/* portafolio */}
+        <div
+          className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
+          style={{ backgroundImage: `url(${portafolio})` }}
+        >
+          {" "}
+        </div>
+
+        {/* axios agency */}
         <div
           className="bg-contain h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
           style={{ backgroundImage: `url(${axiosagency})` }}
@@ -18,7 +28,6 @@ import quiz from '../assets/quiz.png'
           }}
         >
           {" "}
-         
         </div>
         {/* dashboar restaurant */}
         <div
@@ -29,7 +38,6 @@ import quiz from '../assets/quiz.png'
           }}
         >
           {" "}
-         
         </div>
         {/* app quiz */}
         <div
@@ -40,7 +48,6 @@ import quiz from '../assets/quiz.png'
           }}
         >
           {" "}
-         
         </div>
 
         {/* transporto */}
@@ -52,12 +59,10 @@ import quiz from '../assets/quiz.png'
             window.open("https://transporto.vercel.app/", "_blank");
           }}
         >
-          <p className='text-white bg-slate-900 rounded-xl'>No responsive a pedido del cliente codigo final oculto por legalidad</p>
-          {" "}
-         
+          <p className="text-white bg-slate-900 rounded-xl">
+            No responsive a pedido del cliente codigo final oculto por legalidad
+          </p>{" "}
         </div>
-
-        
       </div>
     </div>
   );

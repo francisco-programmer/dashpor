@@ -6,8 +6,8 @@ import Dashboard from './pages/Dashboard'
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <div className="App">
+    return (
+  <div className="App">
       <Dashboard />
       
     </div>

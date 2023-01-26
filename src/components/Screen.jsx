@@ -13,12 +13,12 @@ const Screen = () => {
 
 
   return (
-    <div className="p-4">
-      <div className="bg-slate-900">
+    <div className="px-4 pt-1 ">
+      <div className="bg-slate-900 rounded-xl"> 
         {/* barra de busqueda */}
-        <div className="flex justify-between items-center mx-2">
+        <div className="flex justify-between items-center mx-2 ">
           <BsArrowLeft className="text-slate-300" />
-          <p className="text-slate-300 bg-slate-800 w-56 p-2 my-1 rounded">
+          <p className="text-slate-300 bg-slate-800 w-56 p-2  rounded">
             Francisco Palencia
           </p>
           <AiFillSetting className="text-slate-300" />
@@ -54,7 +54,7 @@ const Screen = () => {
             Monteria, Colombia
           </p>
           <p className="text-blue-500 font-bold text-xs font-poppins ">
-            393 contactos
+            433 contactos
           </p>
         </div>
         {/* botones interes */}
@@ -101,7 +101,7 @@ const Screen = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-2 border-b-1 border-slate-900 mt-1 ">
+          <div className="flex gap-2 border-b-1 border-slate-900  ">
             <HiUsers className="text-slate-300" />
             <div className="">
               <p className="text-slate-300 text-sm font-poppins font-bold">

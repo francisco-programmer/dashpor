@@ -4,6 +4,7 @@ import dashboard from '../assets/dashboard.png'
 import transporto from '../assets/transporto.png'
 import quiz from '../assets/quiz.png'
 import portafolio  from '../assets/portafolio.png'
+import notii from '../assets/notti.png'
 
 
  const Projects = () => {
@@ -11,6 +12,15 @@ import portafolio  from '../assets/portafolio.png'
     <div className="">
       <h1 className="font-poppins f text-2xl text-sky-500  ">Proyectos</h1>
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5">
+        {/* notti.tech */}
+      <div
+          className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
+          style={{ backgroundImage: `url(${notii})` }} onClick={() => {
+            window.open("https://www.notii.tech/", "_blank");
+          }}
+        >
+          {" "}
+        </div>
         {/* portafolio */}
         <div
           className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"

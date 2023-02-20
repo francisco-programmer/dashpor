@@ -5,6 +5,7 @@ import transporto from '../assets/transporto.png'
 import quiz from '../assets/quiz.png'
 import portafolio  from '../assets/portafolio.png'
 import notii from '../assets/notti.png'
+import latindev from '../assets/latindev.png'
 
 
  const Projects = () => {
@@ -12,6 +13,16 @@ import notii from '../assets/notti.png'
     <div className="">
       <h1 className="font-poppins f text-2xl text-sky-500  ">Proyectos</h1>
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5">
+         {/* latindev */}
+      <div
+          className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
+          style={{ backgroundImage: `url(${latindev})` }} onClick={() => {
+            window.open("https://latindev.vercel.app/", "_blank");
+          }}
+        >
+          
+          {" "}
+        </div>
         {/* notti.tech */}
       <div
           className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"

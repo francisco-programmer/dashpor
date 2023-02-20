@@ -26,7 +26,7 @@ const Screen = () => {
 
         {/* portada */}
         <div className="">
-          <img src="https://media.licdn.com/dms/image/D4E16AQEOX1QrLlERdA/profile-displaybackgroundimage-shrink_350_1400/0/1666925368837?e=1677715200&v=beta&t=z5lcnMoc-6hDCrFKtjmZwJE3tsPJhSWvNDToenflMtk" />
+          <img src="https://github.com/francisco-programmer/francisco-programmer/raw/main/src/Screenshot%202023-02-08%20at%2020-45-11%20Github%20Profile%20Header%20Generator.png" />
           <div className="flex justify-between">
             <img
               src="https://avatars.githubusercontent.com/u/102636517?v=4"
@@ -54,7 +54,7 @@ const Screen = () => {
             Monteria, Colombia
           </p>
           <p className="text-blue-500 font-bold text-xs font-poppins ">
-            433 contactos
+            +500 contactos
           </p>
         </div>
         {/* botones interes */}
@@ -70,7 +70,7 @@ const Screen = () => {
 
         {/* scroll horizontal */}
 
-        <div className="overflow-x-auto p-4 flex gap-4 ">
+        <div className="overflow-x-auto p-2 flex gap-4 ">
           <div className="border-x border-y border-slate-700 rounded-xl p-2 w-full">
             <p className="text-xs text-blue-600  font-poppins">
               Muestra a los tecnicos de seleccion que estas buscando empleo
@@ -83,8 +83,9 @@ const Screen = () => {
       </div>
 
       {/* analisis */}
-      <div className="bg-slate-900 mt-2">
-        <div className="p-2 pt-4">
+      <div className="bg-slate-900 mt-1 p-1 rounded-lg
+      ">
+        <div className="">
           <p className="font-poppins text-slate-300 font-bold ">Análisis</p>
           <div className="flex items-center gap-1">
             <AiFillEye />

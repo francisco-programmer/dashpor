@@ -6,14 +6,14 @@ import { BsFillPatchCheckFill  } from "react-icons/bs";
 
 const SkillDif = () => {
   return (
-    <div>
-      <div>
-        <p className='text-sky-500 font-poppins text-2xl'>Habilidades Tecnicas</p><br></br>
+    <div  id='skill'>
+      <div className='mt-5'>
+        <p className='text-sky-500 font-poppins text-2xl text-center font-bold ' >Habilidades Tecnicas</p><br></br>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 px-5 ">
         {/* frontend skill */}
 
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center">
+        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <MdCameraFront className="text-white text-5xl" />
@@ -27,10 +27,13 @@ const SkillDif = () => {
          
         <div className='flex flex-col'>
           <div className='flex gap-3 justify-start'>
+            
+
           <BsFillPatchCheckFill className='text-yellow-500 justify-start' /><p className="text-slate-300 text-center font-poppins ">
            Html, Css, Javascript
           </p>
-          </div>
+            </div>
+         
 
           <div className='flex gap-3'>
           <BsFillPatchCheckFill className='text-yellow-500' /><p className="text-slate-300 text-center font-poppins ">
@@ -45,7 +48,20 @@ const SkillDif = () => {
           </div>
           <div className='flex gap-3'>
           <BsFillPatchCheckFill className='text-yellow-500 justify-start' /><p className="text-slate-300 text-center font-poppins ">
-           Wordpress
+           Integraciones
+          </p>
+          </div>
+          <div className='flex gap-3'>
+          <BsFillPatchCheckFill className='text-yellow-500 justify-start' /><p className="text-slate-300 text-center font-poppins ">
+           Pasarelas de pago
+          </p>
+          </div>
+
+
+
+          <div className='flex gap-3'>
+          <BsFillPatchCheckFill className='text-yellow-500 justify-start' /><p className="text-slate-300 text-center font-poppins ">
+           Wordpress, ecommerce
           </p>
           </div>
           <div className='flex gap-3'>
@@ -57,7 +73,7 @@ const SkillDif = () => {
           </div>
         </div>
         {/* api skill */}
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center">
+        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <AiFillApi className="text-white text-5xl" />
@@ -102,7 +118,7 @@ const SkillDif = () => {
         </div>
 
         {/* software skill */}
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center">
+        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <DiLinux className="text-white text-5xl" />

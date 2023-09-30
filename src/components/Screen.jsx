@@ -13,7 +13,7 @@ const Screen = () => {
 
 
   return (
-    <div className="px-4 pt-1 ">
+    <div className="px-4 pt-1 mt-20 lg:mt-0">
       <div className="bg-slate-900 rounded-xl"> 
         {/* barra de busqueda */}
         <div className="flex justify-between items-center mx-2 ">

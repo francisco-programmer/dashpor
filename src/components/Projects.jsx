@@ -10,12 +10,12 @@ import latindev from '../assets/latindev.png'
 
  const Projects = () => {
   return (
-    <div className="">
-      <h1 className="font-poppins f text-2xl text-sky-500  ">Proyectos</h1>
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5">
+    <div className="" id='project'>
+      <h1 className="font-poppins f text-2xl text-sky-500  " >Proyectos</h1>
+      <div className="grid grid-cols-2  gap-4 mt-5">
          {/* latindev */}
       <div
-          className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
+          className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer shadow-lg shadow-sky-900 bg-no-repeat"
           style={{ backgroundImage: `url(${latindev})` }} onClick={() => {
             window.open("https://latindev.vercel.app/", "_blank");
           }}
@@ -25,7 +25,7 @@ import latindev from '../assets/latindev.png'
         </div>
         {/* notti.tech */}
       <div
-          className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
+          className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer shadow-lg shadow-sky-900"
           style={{ backgroundImage: `url(${notii})` }} onClick={() => {
             window.open("https://www.notii.tech/", "_blank");
           }}
@@ -34,7 +34,7 @@ import latindev from '../assets/latindev.png'
         </div>
         {/* portafolio */}
         <div
-          className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
+          className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer shadow-lg shadow-sky-900"
           style={{ backgroundImage: `url(${portafolio})` }}
         >
           {" "}
@@ -42,7 +42,7 @@ import latindev from '../assets/latindev.png'
 
         {/* axios agency */}
         <div
-          className="bg-contain h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
+          className="bg-contain h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer shadow-lg shadow-sky-900"
           style={{ backgroundImage: `url(${axiosagency})` }}
           onClick={() => {
             window.open("https://www.axiosagency.info/", "_blank");
@@ -52,7 +52,7 @@ import latindev from '../assets/latindev.png'
         </div>
         {/* dashboar restaurant */}
         <div
-          className="bg-contain h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
+          className="bg-contain h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer shadow-lg shadow-sky-900"
           style={{ backgroundImage: `url(${dashboard})` }}
           onClick={() => {
             window.open("https://franciscodashboard.onrender.com/", "_blank");
@@ -62,7 +62,7 @@ import latindev from '../assets/latindev.png'
         </div>
         {/* app quiz */}
         <div
-          className="bg-contain h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
+          className="bg-contain h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer shadow-lg shadow-sky-900"
           style={{ backgroundImage: `url(${quiz})` }}
           onClick={() => {
             window.open("https://app-quiz-sigma.vercel.app/", "_blank");
@@ -74,7 +74,7 @@ import latindev from '../assets/latindev.png'
         {/* transporto */}
 
         <div
-          className="bg-contain h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer"
+          className="bg-contain h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer shadow-lg shadow-sky-900"
           style={{ backgroundImage: `url(${transporto})` }}
           onClick={() => {
             window.open("https://transporto.vercel.app/", "_blank");

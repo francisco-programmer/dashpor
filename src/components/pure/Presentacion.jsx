@@ -6,25 +6,25 @@ import { SiFastapi } from "react-icons/si";
 
 const Presentacion = () => {
   return (
-    <div>
-      <div className="flex flex-wrap place-items-center">
-        <div className="sm:px-8 ">
+    <div id='home'>
+      <div className="flex flex-wrap place-items-center px-2 lg:px-0 lg:mt-0 mt-20">
+       
           <img
             src="https://avatars.githubusercontent.com/u/102636517?v=4"
-            className="rounded-full w-40 "
+            className="rounded-full w-40 mx-auto "
           />
-        </div>
+        
         <div className=" ">
           <div>
-            <p className="text-sky-500 text-3xl font-semibolt font-poppins  ">
+            <p className="text-sky-500 text-3xl font-semibolt font-poppins  text-center lg:text-start ">
               Francisco Palencia{" "}
             </p>
-            <p className="text-slate-400  text-xl font-extrabold  font-poppins">
+            <p className="text-slate-400  text-xl font-extrabold text-center lg:text-start font-poppins">
               Desarrollador Frontend
             </p>
           </div>
-          <div className=" items-center  bg-green-600/10 p-4 rounded-lg border border-dashed border-green-600">
-            <p className="font-poppins text-slate-50 ">
+          <div className=" items-center  bg-green-600/10 p-4 rounded-lg border border-dashed border-green-600 shadow-lg shadow-green-900 ">
+            <p className="font-poppins text-slate-50 text-justify ">
               Tengo una gran pasión por los efectos de interfaz de usuario,
               <br></br>
               las animaciones y la creacion de experiencias de usuario
@@ -33,8 +33,8 @@ const Presentacion = () => {
           </div>
         </div>
       </div>
-      <div className="grid  grid-cols-1  md:grid-cols-2 xl:grid-cols-4 mt-7 gap-4 ">
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center">
+      <div className="grid  grid-cols-2  md:grid-cols-2 xl:grid-cols-4 mt-7 gap-4 px-2  lg:px-0">
+        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <MdOutlineDevices className="text-white text-5xl" />
@@ -51,7 +51,7 @@ const Presentacion = () => {
           <div></div>
         </div>
 
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center">
+        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <AiTwotoneStar className="text-white text-5xl" />
@@ -69,7 +69,7 @@ const Presentacion = () => {
           <div></div>
         </div>
 
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center">
+        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <HiLightBulb className="text-white text-5xl" />
@@ -86,7 +86,7 @@ const Presentacion = () => {
           <div></div>
         </div>
 
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center">
+        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <SiFastapi className="text-white text-5xl" />

@@ -18,7 +18,7 @@ const Contact = () => {
     e.preventDefault();
     notify()
 
-    emailjs.sendForm('service_dqfr3ol', 'template_sxmum97', form.current, 'DDvHciQ4-0dSQV_Pa')
+    emailjs.sendForm('service_dqfr3ol', 'template_sxmum97', form.current, '3rbcs8T7pzbbaiP0qqx8W')
      
       .then((result) => {
           console.log(result);
@@ -41,11 +41,11 @@ const Contact = () => {
     theme: "dark",
     });
   return (
-    <div className="">
-      <p className="text-slate-300 font-poppins">
+    <div className="mt-20 lg:mt-0 " id='contacto'>
+      <p className="text-slate-300 font-poppins text-center px-5 ">
         Podemos construir cosas increibles y estas aun paso de hacerlo!!.
       </p>
-      <h1 className="font-poppins text-center  text-2xl text-sky-500  mt-6">
+      <h1 className="font-poppins font-bold text-center  text-2xl text-sky-500  mt-6">
         Contáctame
       </h1>
       <div className="flex gap-4 justify-center my-6">

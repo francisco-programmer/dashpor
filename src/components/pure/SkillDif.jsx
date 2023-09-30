@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { MdCameraFront } from "react-icons/md";
 import { AiFillApi } from "react-icons/ai";
 import { DiLinux  } from "react-icons/di";
 import { BsFillPatchCheckFill  } from "react-icons/bs";
+import AOS from 'aos'
 
 const SkillDif = () => {
+  useEffect(() => {
+   AOS.init()
+  }, [])
+  
   return (
     <div  id='skill'>
       <div className='mt-5'>
@@ -13,7 +18,8 @@ const SkillDif = () => {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 px-5 ">
         {/* frontend skill */}
 
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
+        <div data-aos="fade-right" data-aos-duration="1000"
+         className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <MdCameraFront className="text-white text-5xl" />
@@ -73,7 +79,8 @@ const SkillDif = () => {
           </div>
         </div>
         {/* api skill */}
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
+        <div  data-aos="fade-down" data-aos-duration="1000"
+         className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <AiFillApi className="text-white text-5xl" />
@@ -118,7 +125,8 @@ const SkillDif = () => {
         </div>
 
         {/* software skill */}
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
+        <div  data-aos="fade-left" data-aos-duration="1000"
+         className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <DiLinux className="text-white text-5xl" />

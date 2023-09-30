@@ -26,7 +26,7 @@ const Contact = () => {
           console.log(error);
       });
 
-   
+   form.current.reset()
   };
 
 

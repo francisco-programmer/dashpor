@@ -1,19 +1,25 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { MdOutlineDevices } from "react-icons/md";
 import { AiTwotoneStar } from "react-icons/ai";
 import { HiLightBulb } from "react-icons/hi";
 import { SiFastapi } from "react-icons/si";
+import AOS from 'aos';
 
 const Presentacion = () => {
+    useEffect(() => {
+    AOS.init()
+    }, [])
+    
+
+
   return (
-    <div id='home'>
+    <div id="home">
       <div className="flex flex-wrap place-items-center px-2 lg:px-0 lg:mt-0 mt-20">
-       
-          <img
-            src="https://avatars.githubusercontent.com/u/102636517?v=4"
-            className="rounded-full w-40 mx-auto "
-          />
-        
+        <img
+          src="https://avatars.githubusercontent.com/u/102636517?v=4"
+          className="rounded-full w-40 mx-auto "
+        />
+
         <div className=" ">
           <div>
             <p className="text-sky-500 text-3xl font-semibolt font-poppins  text-center lg:text-start ">
@@ -34,7 +40,10 @@ const Presentacion = () => {
         </div>
       </div>
       <div className="grid  grid-cols-2  md:grid-cols-2 xl:grid-cols-4 mt-7 gap-4 px-2  lg:px-0">
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
+        <div
+          data-aos="zoom-out-right" data-aos-duration="1000"
+          className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900"
+        >
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <MdOutlineDevices className="text-white text-5xl" />
@@ -51,7 +60,10 @@ const Presentacion = () => {
           <div></div>
         </div>
 
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
+        <div
+          data-aos="zoom-out-left" data-aos-duration="1000"
+          className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900"
+        >
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <AiTwotoneStar className="text-white text-5xl" />
@@ -69,7 +81,11 @@ const Presentacion = () => {
           <div></div>
         </div>
 
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
+        <div
+          data-aos="zoom-out-right"
+          data-aos-duration="1000"
+          className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900"
+        >
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <HiLightBulb className="text-white text-5xl" />
@@ -86,7 +102,12 @@ const Presentacion = () => {
           <div></div>
         </div>
 
-        <div className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900">
+        <div
+          data-aos="zoom-out-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+          className="bg-sky-600/10 p-4 rounded-3xl flex flex-col place-items-center shadow-lg shadow-sky-900"
+        >
           <div className="h-20 ">
             <div className="bg-sky-900 w-20 h-20 rounded-full p-4">
               <SiFastapi className="text-white text-5xl" />

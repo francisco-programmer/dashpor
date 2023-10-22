@@ -32,9 +32,9 @@ const Presentacion = () => {
           <div className=" items-center  bg-green-600/10 p-4 rounded-lg border border-dashed border-green-600 shadow-lg shadow-green-900 ">
             <p className="font-poppins text-slate-50 text-justify ">
               Tengo una gran pasión por los efectos de interfaz de usuario,
-              <br></br>
+              <br className='hidden lg:flex'></br>
               las animaciones y la creacion de experiencias de usuario
-              intuitivas y <br></br> dinamicas hagamos algo increible.
+              intuitivas y <br className='hidden lg:flex'></br> dinamicas hagamos algo increible.
             </p>
           </div>
         </div>

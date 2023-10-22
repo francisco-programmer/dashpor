@@ -7,7 +7,7 @@ const Content = () => {
   return (
     <div className='mx-3'>
         <Header />
-        <div>
+        <div className=''>
           <Outlet />
         </div>
     </div>

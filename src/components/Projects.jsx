@@ -23,6 +23,19 @@ import { useEffect } from 'react'
     <div className="" id="project">
       <h1 className="font-poppins f text-2xl text-sky-500 lg:mt-0 mt-10 font-bold text-center lg:text-start  ">Algunos de mis Proyectos</h1>
       <div className="grid lg:grid-cols-2  gap-4 mt-5">
+
+      <div
+          data-aos="flip-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer shadow-lg shadow-sky-900 bg-no-repeat"
+          style={{ backgroundImage: `url('https://i.imgur.com/I6KN5wz.png')` }}
+          onClick={() => {
+            window.open("https://courses-premium.vercel.app/", "_blank");
+          }}
+        >
+          {" "}
+        </div>
         {/* Learning Plus*/}
         <div
           data-aos="flip-up"
@@ -64,9 +77,7 @@ import { useEffect } from 'react'
         </div>
         {/* notti.tech */}
         <div
-          data-aos="flip-up"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+         
           className="bg-contain  h-52 bg-center duration-1000 hover:scale-90 rounded-2xl cursor-pointer shadow-lg shadow-sky-900"
           style={{ backgroundImage: `url(${notii})` }}
           onClick={() => {
